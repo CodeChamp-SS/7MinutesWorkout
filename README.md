@@ -9,6 +9,17 @@ Allows you customize your workout by selecting the exercises from a list of vari
 
 Or are in a hurry ? Just Start the workout with PreMade Workout with exercises focussing on full body
 
+## Installation
+
+clone this repository to your local machine `https://github.com/CodeChamp-SS/IOSD-DevWeek-2020`
+
+then build the project using `Android Studio`
+
+## Testing
+
+download the apk file from here `https://github.com/CodeChamp-SS/IOSD-DevWeek-2020/blob/master/App%20apk%20file/7MinWorkout.apk`
+and then install and run this app on your android phone
+
 
 ### Screenshots
 
@@ -25,4 +36,4 @@ Or are in a hurry ? Just Start the workout with PreMade Workout with exercises f
   <img width="230" height="370" src="https://user-images.githubusercontent.com/52480794/88897269-a4b55380-d268-11ea-947d-544f692565e6.png">
 </p>
 
-<img align="left" width="230" height="370" src="https://user-images.githubusercontent.com/52480794/88897283-a848da80-d268-11ea-9859-ab8a594c2073.png"> 
+<img align="left" width="230" height="370" src="https://user-images.githubusercontent.com/52480794/88897283-a848da80-d268-11ea-9859-ab8a594c2073.png">

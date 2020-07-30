@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".model.BmiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/b_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:title="BMI Calculator"
+        android:background="@drawable/tv_bg"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/BackBTheme" />
+
+    <RadioGroup
+        android:id="@+id/r_grp"
+        android:layout_below="@id/b_toolbar"
+        android:orientation="horizontal"
+        android:background="@drawable/radio_grp_bg"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:id="@+id/metric_u"
+            android:text="METRIC UNITS"
+            android:textColor="@drawable/radio_b_text"
+            android:background="@drawable/radio_b_bg"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:checked="true"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/us_u"
+            android:text="US UNITS"
+            android:button="@null"
+            android:textColor="@drawable/radio_b_text"
+            android:background="@drawable/radio_b_bg"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:checked="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_metric"
+        android:layout_below="@id/r_grp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ht_tv"
+                android:hint="Height (cm)"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/wt_tv"
+                android:hint="Weight (kg)"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_us"
+        android:layout_below="@id/r_grp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ht_ft"
+                    android:hint="Height (ft)"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="10dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ht_in"
+                    android:hint="Height (inch)"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/wt_tv_p"
+                android:hint="Weight (lbs)"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_disp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_us"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="YOUR BMI"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bmi_tv"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="@drawable/bmi_bg_2"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:minWidth="100dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calcB"
+            android:layout_margin="30dp"
+            android:text="@string/calculate"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

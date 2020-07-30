@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">7MinuteWorkout</string>
+    <string name="warn">You\'re about to exit your workout.
+        You\'ve come this far, are you sure you want to quit ?
+    </string>
+    <string name="calculate">Calculate</string>
+</resources>

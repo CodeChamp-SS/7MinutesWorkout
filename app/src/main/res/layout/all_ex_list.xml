@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/cv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/ex_gif"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/e16" />
+
+            <TextView
+                android:id="@+id/ex_name"
+                android:text="Jumping Sqauts"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

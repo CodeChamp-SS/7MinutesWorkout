@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARE YOU SURE ?"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="@string/warn"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/yesB"
+            android:text="YES"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/highlight"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/noB"
+            android:text="NO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/highlight"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

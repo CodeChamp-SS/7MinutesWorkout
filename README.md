@@ -37,3 +37,6 @@ and then install and run this app on your android phone
 </p>
 
 <img align="left" width="230" height="370" src="https://user-images.githubusercontent.com/52480794/88897283-a848da80-d268-11ea-9859-ab8a594c2073.png">
+
+
+[![](http://img.youtube.com/vi/bFXaphct-lI/0.jpg)](http://www.youtube.com/watch?v=bFXaphct-lI "App Demo Video")

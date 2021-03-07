@@ -1,6 +1,4 @@
-## IOSD-DevWeek-2020 
-My project for IOSD DevWeek 2020 Hackathon
-# 7Minute Workout App
+## 7Minute Workout App
 
 An app which allows you to stay fit even when you are at your home in just 7 Minutes!
 No gym equipments required for any exercise included in the app.

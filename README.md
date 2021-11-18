@@ -9,7 +9,7 @@ Or are in a hurry ? Just Start the workout with PreMade Workout with exercises f
 
 ## Installation
 
-clone this repository to your local machine `https://github.com/CodeChamp-SS/IOSD-DevWeek-2020`
+clone this repository to your local machine `https://github.com/CodeChamp-SS/7MinutesWorkout.git`
 
 then build the project using `Android Studio`
 

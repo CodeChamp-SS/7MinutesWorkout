@@ -15,7 +15,7 @@ then build the project using `Android Studio`
 
 ## Testing
 
-download the apk file from here `https://github.com/CodeChamp-SS/IOSD-DevWeek-2020/blob/master/App%20apk%20file/7MinWorkout.apk`
+download the apk file from here `https://github.com/CodeChamp-SS/7MinutesWorkout/blob/master/App%20apk%20file/7MinWorkout.apk`
 and then install and run this app on your android phone
 
 
